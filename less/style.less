@@ -1,0 +1,36 @@
+.size(@w, @h){
+    width: @w;
+    min-height: @h;
+}
+.container{
+    .size(100%, auto);
+}
+.container_cont{
+    .size(1024px, 550px);
+    margin: 0 auto;
+    background-color: #30b435;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+//    justify-content: center;
+//    align-items: stretch;
+    align-content: center;
+}
+.flexElem{
+    .size(150px, 40px);
+    background-color: blue;
+    border: 1px solid red;
+    text-align: center;
+    order: 7;
+    p{
+        margin: inherit;
+        padding: 0;
+    }
+}
+.fl1{
+    align-self: flex-end;
+}
+.fl2{
+    flex: 1 0;
+    
+}
